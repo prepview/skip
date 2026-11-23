@@ -1,3 +1,4 @@
+import { Redirect } from 'expo-router';
 import { TabList, TabSlot, TabTrigger, Tabs, type TabListProps, type TabTriggerSlotProps } from 'expo-router/ui';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, View, type PressableProps } from 'react-native';
@@ -5,6 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Icon, type IconName } from '@/components/Icon';
 import { Text } from '@/components/Text';
+import { useSettings } from '@/data/settings';
 import { useTheme } from '@/theme/ThemeProvider';
 
 /** Height the floating tab bar takes up, so screens can pad their content past it. */
@@ -12,6 +14,8 @@ export const TAB_BAR_SPACE = 92;
 
 export default function TabsLayout() {
   const { t } = useTranslation();
+  const { onboarded } = useSettings();
+  if (!onboarded) return <Redirect href="/onboarding" />;
   return (
     <Tabs>
       <TabSlot />

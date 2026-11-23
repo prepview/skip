@@ -29,7 +29,18 @@
     "dayToday": "aujourd’hui",
     "details": "Ajouter des détails",
     "headlineDrinkToday": "Aujourd’hui est noté.",
-    "bodyDrinkToday": "Une nouvelle série peut commencer demain. Être honnête ne te fait rien perdre."
+    "bodyDrinkToday": "Une nouvelle série peut commencer demain. Être honnête ne te fait rien perdre.",
+    "planLink": "Planifier la semaine",
+    "setGoal": "Fixer un objectif hebdomadaire",
+    "plannedNone": "Aucun jour avec alcool prévu.",
+    "plannedList": "Prévu : {{days}}.",
+    "onPlan": "Semaine dans le plan",
+    "onPlanWeeks": "Semaine dans le plan · {{count}} semaines d’affilée",
+    "overPlan": "Au-delà du plan cette semaine",
+    "dayPlanned": "jour avec alcool prévu",
+    "tipDay": "Jour {{count}}",
+    "tipNoteLabel": "Une idée",
+    "tipNote": "Tu as remarqué quelque chose ? Une courte note t’aide à voir ce qui marche."
   },
   "profile": {
     "title": "Profil",
@@ -45,7 +56,13 @@
       "eu": "Europe",
       "uk": "Royaume-Uni",
       "us": "États-Unis"
-    }
+    },
+    "reminder": "Rappel quotidien",
+    "reminderDenied": "Les notifications de Skip sont désactivées dans les réglages de ton téléphone.",
+    "goal": "Objectif hebdomadaire",
+    "goalNone": "Non défini",
+    "goalValue_one": "Au plus {{count}} jour avec alcool",
+    "goalValue_other": "Au plus {{count}} jours avec alcool"
   },
   "log": {
     "sober": "Sans alcool",
@@ -154,8 +171,155 @@
     "monthSober_one": "jour sans alcool en {{month}}",
     "monthSober_other": "jours sans alcool en {{month}}"
   },
-  "soon": {
-    "title": "Arrive dans la prochaine version",
-    "journey": "Ce qui change souvent quand les jours sans alcool s’additionnent."
+  "plan": {
+    "title": "Planifie ta semaine",
+    "intro": "Décide maintenant des jours où tu pourrais boire : le choix sera déjà fait le soir venu.",
+    "goalLabel": "Nombre maximal de jours avec alcool par semaine",
+    "counter": "{{count}} sur {{goal}} prévus",
+    "plan": "Prévoir",
+    "planned": "Prévu",
+    "sober": "Sans alcool",
+    "drink": "Avec alcool",
+    "today": "Aujourd’hui",
+    "repeat": "Répéter chaque semaine",
+    "repeatSub": "Commencer chaque semaine avec les mêmes jours",
+    "howTitle": "Comment fonctionnent les jours prévus",
+    "how1": "Si tu restes dans ta limite un jour prévu, ta semaine reste dans le plan.",
+    "how2": "Si tu sautes un jour prévu, il devient simplement un jour sans alcool.",
+    "how3": "Un verre imprévu se note de la même façon, sans pénalité.",
+    "save": "Enregistrer le plan",
+    "fewer": "Un jour de moins",
+    "more": "Un jour de plus",
+    "zero": "Une semaine entièrement sans alcool, sans jour prévu.",
+    "back": "Retour"
+  },
+  "journey": {
+    "intro": "Ce qui change souvent quand les jours sans alcool s’additionnent. Quoi que tu notes, rien ne se referme ici.",
+    "here": "Tu es ici",
+    "day": "Jour {{count}}",
+    "best": "Plus longue série : {{count}}",
+    "opensAt": "S’ouvre au jour {{count}}",
+    "topics": {
+      "all": "Tout",
+      "body": "Corps",
+      "sleep": "Sommeil",
+      "mind": "Esprit"
+    },
+    "disclaimer": "Informations générales, pas un avis médical. Si tu bois beaucoup chaque jour, parles-en à un médecin avant d’arrêter : un arrêt brutal peut être dangereux.",
+    "entries": {
+      "sleep1": {
+        "title": "Le sommeil s’allège avant de s’améliorer",
+        "body": "L’alcool aide à s’endormir mais réduit le sommeil paradoxal plus tard dans la nuit. Les premières nuits sans alcool peuvent être agitées, le temps que cela se rééquilibre."
+      },
+      "water1": {
+        "title": "Se réhydrater",
+        "body": "L’alcool te fait perdre plus d’eau que tu n’en bois. Après quelques jours sans, la soif du matin et les maux de tête ont tendance à s’atténuer."
+      },
+      "sleep7": {
+        "title": "Un sommeil plus profond",
+        "body": "Après une semaine environ, beaucoup mettent un peu plus de temps à s’endormir mais se réveillent moins la nuit et se sentent plus reposés le matin."
+      },
+      "stomach14": {
+        "title": "Un estomac plus calme",
+        "body": "L’alcool irrite la paroi de l’estomac et augmente l’acidité. Deux semaines sans suffisent souvent pour que les brûlures et les ballonnements se calment."
+      },
+      "liver30": {
+        "title": "Foie et tension artérielle",
+        "body": "Dans des études sur des buveurs réguliers ayant fait une pause d’un mois, la graisse du foie et la tension avaient tendance à baisser. L’ampleur dépend de ce que tu buvais avant."
+      },
+      "mind90": {
+        "title": "Humeur et concentration",
+        "body": "Beaucoup constatent une humeur plus stable et des matins plus clairs après quelques mois. Boire moins peut y contribuer, sans être un traitement de la déprime."
+      }
+    }
+  },
+  "onboarding": {
+    "welcomeTitle": "Saute un verre. Sens la différence.",
+    "welcomeBody": "Une façon sereine de boire moins. Sans jugement ni leçon.",
+    "start": "Créer mon plan",
+    "continue": "Continuer",
+    "back": "Retour",
+    "progress": "Question {{step}} sur 7",
+    "q1": {
+      "title": "Qu’est-ce qui t’amène ?",
+      "sub": "Cela donne le ton de l’app. Tu pourras le changer plus tard."
+    },
+    "intent": {
+      "less": "Boire moins",
+      "lessSub": "Moins de jours et de plus petites quantités.",
+      "break": "Faire une pause",
+      "breakSub": "Une période sans alcool.",
+      "habits": "Voir mes habitudes",
+      "habitsSub": "Pas encore d’objectif. Juste une image honnête."
+    },
+    "q2": {
+      "title": "Combien de jours par semaine bois-tu en ce moment ?",
+      "sub": "Une estimation honnête suffit. Personne d’autre ne le voit.",
+      "unit": "Jours par semaine, actuellement",
+      "note": "C’est ton point de départ. Tes progrès se mesurent par rapport à lui, pas aux autres."
+    },
+    "q3": {
+      "title": "Un jour où tu bois, c’est combien en général ?",
+      "sub": "Un verre, c’est une bière, un verre de vin ou un shot."
+    },
+    "amount": {
+      "a": "1 à 2 verres",
+      "b": "3 à 4 verres",
+      "c": "5 à 6 verres",
+      "d": "7 ou plus"
+    },
+    "q4": {
+      "title": "De quoi aimerais-tu avoir plus ?",
+      "sub": "Choisis ce qui compte pour toi."
+    },
+    "why": {
+      "sleep": "Mieux dormir",
+      "energy": "Plus d’énergie",
+      "head": "Les idées plus claires",
+      "fitness": "Forme et poids",
+      "family": "Être présent pour la famille"
+    },
+    "q5": {
+      "title": "Combien de jours avec alcool par semaine te semblent justes ?",
+      "sub": "Choisis quelque chose qui te conviendrait, pas un exploit.",
+      "unit": "Jours par semaine, au maximum",
+      "leaves_one": "Cela laisse {{count}} jour sans alcool chaque semaine.",
+      "leaves_other": "Cela laisse {{count}} jours sans alcool chaque semaine.",
+      "fewer_one": "{{count}} jour avec alcool de moins qu’aujourd’hui.",
+      "fewer_other": "{{count}} jours avec alcool de moins qu’aujourd’hui."
+    },
+    "q6": {
+      "title": "Quels jours penses-tu boire ?",
+      "sub": "Choisis-en jusqu’à {{count}}. Tu peux les déplacer chaque semaine.",
+      "explain": "Un jour prévu est une permission, pas un objectif. Reste dans ta limite et la semaine reste dans le plan. Saute-le et il devient simplement un jour sans alcool."
+    },
+    "q7": {
+      "title": "Quand veux-tu qu’on te demande ?",
+      "sub": "Une question discrète par jour. Un seul geste pour répondre."
+    },
+    "summaryTitle": "Ton plan est prêt.",
+    "summaryMore": "{{count}} jours sans alcool de plus par an qu’aujourd’hui.",
+    "summaryFlat": "Une semaine stable, notée honnêtement.",
+    "now": "Maintenant",
+    "goal": "Objectif",
+    "perWeek": "jours avec alcool par semaine",
+    "rowPlanned": "Jours prévus",
+    "rowCheckin": "Rappel quotidien",
+    "none": "Aucun",
+    "heavy": "Tu bois presque tous les jours. Réduire progressivement est plus sûr qu’arrêter d’un coup, et un médecin peut t’y aider.",
+    "finish": "Commencer"
+  },
+  "reminder": {
+    "evening": "Le soir, 21:30",
+    "eveningSub": "Comment s’est passée ta journée ?",
+    "morning": "Le matin, 08:00",
+    "morningSub": "C’était comment, hier ?",
+    "off": "Pas de rappel",
+    "offSub": "J’ouvrirai l’app moi-même.",
+    "short": {
+      "evening": "Soir",
+      "morning": "Matin",
+      "off": "Non"
+    }
   }
 }

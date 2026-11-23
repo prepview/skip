@@ -13,7 +13,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 
 import { DaysProvider } from '@/data/days';
-import { SettingsProvider } from '@/data/settings';
+import { SettingsProvider, useSettings } from '@/data/settings';
 import { restoreLanguage } from '@/i18n';
 import { ThemeProvider, useTheme } from '@/theme/ThemeProvider';
 
@@ -56,6 +56,9 @@ export default function RootLayout() {
 
 function Shell() {
   const { colors } = useTheme();
+  const { ready } = useSettings();
+  // Settings decide whether the first-run questions are shown, so nothing renders until they are read.
+  if (!ready) return null;
   return (
     <>
       {/* The Today screen opens on a dark scene in both themes, so the status bar stays light there. */}

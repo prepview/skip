@@ -29,7 +29,18 @@
     "dayToday": "heute",
     "details": "Details ergänzen",
     "headlineDrinkToday": "Heute ist eingetragen.",
-    "bodyDrinkToday": "Morgen kann eine neue Serie beginnen. Ehrlichkeit kostet dich nichts."
+    "bodyDrinkToday": "Morgen kann eine neue Serie beginnen. Ehrlichkeit kostet dich nichts.",
+    "planLink": "Woche planen",
+    "setGoal": "Wochenziel festlegen",
+    "plannedNone": "Keine Tage mit Alkohol geplant.",
+    "plannedList": "Geplant: {{days}}.",
+    "onPlan": "Woche im Plan",
+    "onPlanWeeks": "Woche im Plan · {{count}} Wochen in Folge",
+    "overPlan": "Diese Woche über dem Plan",
+    "dayPlanned": "geplanter Tag mit Alkohol",
+    "tipDay": "Tag {{count}}",
+    "tipNoteLabel": "Ein Gedanke",
+    "tipNote": "Ist dir etwas aufgefallen? Eine kurze Notiz hilft dir zu sehen, was funktioniert."
   },
   "profile": {
     "title": "Profil",
@@ -45,7 +56,13 @@
       "eu": "Europa",
       "uk": "UK",
       "us": "USA"
-    }
+    },
+    "reminder": "Tägliche Nachfrage",
+    "reminderDenied": "Mitteilungen für Skip sind in den Einstellungen deines Telefons ausgeschaltet.",
+    "goal": "Wochenziel",
+    "goalNone": "Nicht festgelegt",
+    "goalValue_one": "Höchstens {{count}} Tag mit Alkohol",
+    "goalValue_other": "Höchstens {{count}} Tage mit Alkohol"
   },
   "log": {
     "sober": "Alkoholfrei",
@@ -154,8 +171,155 @@
     "monthSober_one": "alkoholfreier Tag im {{month}}",
     "monthSober_other": "alkoholfreie Tage im {{month}}"
   },
-  "soon": {
-    "title": "Kommt mit der nächsten Version",
-    "journey": "Was sich oft verändert, wenn alkoholfreie Tage zusammenkommen."
+  "plan": {
+    "title": "Woche planen",
+    "intro": "Entscheide jetzt, an welchen Tagen du vielleicht trinkst. Dann ist die Frage abends schon geklärt.",
+    "goalLabel": "Höchstens so viele Tage mit Alkohol pro Woche",
+    "counter": "{{count}} von {{goal}} geplant",
+    "plan": "Planen",
+    "planned": "Geplant",
+    "sober": "Alkoholfrei",
+    "drink": "Mit Alkohol",
+    "today": "Heute",
+    "repeat": "Jede Woche wiederholen",
+    "repeatSub": "Jede Woche mit denselben Tagen beginnen",
+    "howTitle": "So funktionieren geplante Tage",
+    "how1": "Bleibst du an einem geplanten Tag im Rahmen, bleibt deine Woche im Plan.",
+    "how2": "Lässt du einen geplanten Tag aus, wird er einfach ein alkoholfreier Tag.",
+    "how3": "Ein ungeplantes Getränk wird genauso eingetragen, ohne Strafe.",
+    "save": "Plan speichern",
+    "fewer": "Ein Tag weniger",
+    "more": "Ein Tag mehr",
+    "zero": "Eine komplett alkoholfreie Woche, ohne geplante Tage.",
+    "back": "Zurück"
+  },
+  "journey": {
+    "intro": "Was sich oft verändert, wenn alkoholfreie Tage zusammenkommen. Egal was du einträgst: Hier schließt sich nichts wieder.",
+    "here": "Du bist hier",
+    "day": "Tag {{count}}",
+    "best": "Längste Serie: {{count}}",
+    "opensAt": "Öffnet sich an Tag {{count}}",
+    "topics": {
+      "all": "Alle",
+      "body": "Körper",
+      "sleep": "Schlaf",
+      "mind": "Kopf"
+    },
+    "disclaimer": "Allgemeine Informationen, keine medizinische Beratung. Wenn du jeden Tag viel trinkst, sprich mit einer Ärztin oder einem Arzt, bevor du aufhörst: Ein plötzlicher Stopp kann gefährlich sein.",
+    "entries": {
+      "sleep1": {
+        "title": "Der Schlaf wird erst leichter, dann besser",
+        "body": "Alkohol hilft beim Einschlafen, stört aber später in der Nacht den Traumschlaf. Die ersten Nächte ohne ihn können unruhig sein, bis sich das wieder einpendelt."
+      },
+      "water1": {
+        "title": "Wieder Flüssigkeit tanken",
+        "body": "Durch Alkohol verlierst du mehr Wasser, als du aufnimmst. Nach ein paar Tagen ohne ihn lassen Durst am Morgen und Kopfschmerzen meist nach."
+      },
+      "sleep7": {
+        "title": "Tieferer Schlaf",
+        "body": "Nach etwa einer Woche brauchen viele etwas länger zum Einschlafen, wachen nachts aber seltener auf und fühlen sich morgens erholter."
+      },
+      "stomach14": {
+        "title": "Ein ruhigerer Magen",
+        "body": "Alkohol reizt die Magenschleimhaut und erhöht die Säure. Zwei Wochen ohne ihn reichen oft, damit Sodbrennen und Völlegefühl nachlassen."
+      },
+      "liver30": {
+        "title": "Leber und Blutdruck",
+        "body": "In Studien mit Menschen, die regelmäßig tranken und einen Monat pausierten, gingen Leberfett und Blutdruck meist zurück. Wie stark, hängt davon ab, wie viel du vorher getrunken hast."
+      },
+      "mind90": {
+        "title": "Stimmung und Konzentration",
+        "body": "Viele berichten nach einigen Monaten von stabilerer Stimmung und klareren Morgen. Weniger zu trinken kann dabei helfen, ist aber keine Behandlung für gedrückte Stimmung."
+      }
+    }
+  },
+  "onboarding": {
+    "welcomeTitle": "Lass ein Glas aus. Spür den Unterschied.",
+    "welcomeBody": "Ein ruhiger Weg, weniger zu trinken. Ohne Urteil und ohne Belehrung.",
+    "start": "Meinen Plan erstellen",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "progress": "Frage {{step}} von 7",
+    "q1": {
+      "title": "Was führt dich her?",
+      "sub": "Das bestimmt den Ton der App. Du kannst es später ändern."
+    },
+    "intent": {
+      "less": "Weniger trinken",
+      "lessSub": "Weniger Tage und kleinere Mengen.",
+      "break": "Eine Pause machen",
+      "breakSub": "Eine Zeit ohne Alkohol.",
+      "habits": "Meine Gewohnheiten sehen",
+      "habitsSub": "Noch kein Ziel. Nur ein ehrliches Bild."
+    },
+    "q2": {
+      "title": "An wie vielen Tagen pro Woche trinkst du im Moment?",
+      "sub": "Eine grobe, ehrliche Schätzung reicht. Niemand sonst sieht das.",
+      "unit": "Tage pro Woche, aktuell",
+      "note": "Das ist dein Ausgangspunkt. Fortschritt misst sich daran, nicht an anderen."
+    },
+    "q3": {
+      "title": "Wie viel trinkst du an einem typischen Tag mit Alkohol?",
+      "sub": "Ein Getränk ist ein Bier, ein Glas Wein oder ein Kurzer."
+    },
+    "amount": {
+      "a": "1 bis 2 Getränke",
+      "b": "3 bis 4 Getränke",
+      "c": "5 bis 6 Getränke",
+      "d": "7 oder mehr"
+    },
+    "q4": {
+      "title": "Wovon hättest du gern mehr?",
+      "sub": "Wähle alles, was dir wichtig ist."
+    },
+    "why": {
+      "sleep": "Besserer Schlaf",
+      "energy": "Mehr Energie",
+      "head": "Ein klarerer Kopf",
+      "fitness": "Fitness und Gewicht",
+      "family": "Für die Familie da sein"
+    },
+    "q5": {
+      "title": "Wie viele Tage mit Alkohol pro Woche fühlen sich richtig an?",
+      "sub": "Wähle etwas, womit du zufrieden wärst, nichts Heldenhaftes.",
+      "unit": "Tage pro Woche, höchstens",
+      "leaves_one": "Damit bleibt jede Woche {{count}} alkoholfreier Tag.",
+      "leaves_other": "Damit bleiben jede Woche {{count}} alkoholfreie Tage.",
+      "fewer_one": "{{count}} Tag mit Alkohol weniger als jetzt.",
+      "fewer_other": "{{count}} Tage mit Alkohol weniger als jetzt."
+    },
+    "q6": {
+      "title": "An welchen Tagen wirst du voraussichtlich trinken?",
+      "sub": "Wähle bis zu {{count}}. Du kannst sie jede Woche verschieben.",
+      "explain": "Ein geplanter Tag ist eine Erlaubnis, kein Ziel. Bleibst du im Rahmen, zählt die Woche weiter als im Plan. Lässt du ihn aus, wird er einfach ein alkoholfreier Tag."
+    },
+    "q7": {
+      "title": "Wann sollen wir nachfragen?",
+      "sub": "Eine ruhige Frage am Tag. Die Antwort braucht nur einen Tipp."
+    },
+    "summaryTitle": "Dein Plan steht.",
+    "summaryMore": "{{count}} alkoholfreie Tage mehr pro Jahr als jetzt.",
+    "summaryFlat": "Eine stabile Woche, ehrlich festgehalten.",
+    "now": "Jetzt",
+    "goal": "Ziel",
+    "perWeek": "Tage mit Alkohol pro Woche",
+    "rowPlanned": "Geplante Tage",
+    "rowCheckin": "Tägliche Nachfrage",
+    "none": "Keine",
+    "heavy": "Du trinkst an den meisten Tagen. Schrittweise zu reduzieren ist sicherer als abrupt aufzuhören, und eine Ärztin oder ein Arzt kann dich dabei unterstützen.",
+    "finish": "Loslegen"
+  },
+  "reminder": {
+    "evening": "Abends, 21:30",
+    "eveningSub": "Wie lief dein Tag?",
+    "morning": "Morgens, 08:00",
+    "morningSub": "Wie war gestern?",
+    "off": "Keine Erinnerung",
+    "offSub": "Ich öffne die App selbst.",
+    "short": {
+      "evening": "Abends",
+      "morning": "Morgens",
+      "off": "Aus"
+    }
   }
 }

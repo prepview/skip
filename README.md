@@ -4,7 +4,7 @@ A calm tracker for drinking less. iOS first, built with Expo (React Native) so A
 
 ## Status
 
-Stages 1 and 2 of the v1 build.
+Stages 1 to 3 of the v1 build.
 
 - Today screen with one-tap logging, the alcohol-free streak and the week strip.
 - Day logging: drink types with regional serving sizes (Europe, UK, US), a photo, mood, occasion tags and a note. Totals are shown in local units and grams of pure alcohol.
@@ -12,8 +12,10 @@ Stages 1 and 2 of the v1 build.
 - Stats: streaks, monthly totals, an average week, the heaviest weekday and average amounts.
 - Dark, light and system themes.
 - English, German, Spanish and French. The app follows the phone's language and can be switched in Profile.
+- First-run questions that set a weekly goal, planned drinking days and a daily reminder.
+- Week planner, planned days on the week strip and a "week on plan" marker beside the streak.
+- Journey: short entries on what tends to change, opened by the longest alcohol-free run and never closed again. The health text is a draft and has not been clinically reviewed.
 - Everything is stored on the device. Accounts and sync come in a later stage.
-- The Journey tab is a placeholder until its stage lands.
 
 ## Run it
 

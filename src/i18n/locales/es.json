@@ -29,7 +29,18 @@
     "dayToday": "hoy",
     "details": "Añadir detalles",
     "headlineDrinkToday": "Hoy está registrado.",
-    "bodyDrinkToday": "Mañana puede empezar una nueva racha. Ser sincero no te quita nada."
+    "bodyDrinkToday": "Mañana puede empezar una nueva racha. Ser sincero no te quita nada.",
+    "planLink": "Planificar la semana",
+    "setGoal": "Fijar un objetivo semanal",
+    "plannedNone": "Sin días con alcohol planificados.",
+    "plannedList": "Planificado: {{days}}.",
+    "onPlan": "Semana según el plan",
+    "onPlanWeeks": "Semana según el plan · {{count}} semanas seguidas",
+    "overPlan": "Por encima del plan esta semana",
+    "dayPlanned": "día con alcohol planificado",
+    "tipDay": "Día {{count}}",
+    "tipNoteLabel": "Una idea",
+    "tipNote": "¿Has notado algo? Una nota breve te ayuda a ver qué funciona."
   },
   "profile": {
     "title": "Perfil",
@@ -45,7 +56,13 @@
       "eu": "Europa",
       "uk": "Reino Unido",
       "us": "EE. UU."
-    }
+    },
+    "reminder": "Recordatorio diario",
+    "reminderDenied": "Las notificaciones de Skip están desactivadas en los ajustes de tu teléfono.",
+    "goal": "Objetivo semanal",
+    "goalNone": "Sin fijar",
+    "goalValue_one": "Máximo {{count}} día con alcohol",
+    "goalValue_other": "Máximo {{count}} días con alcohol"
   },
   "log": {
     "sober": "Sin alcohol",
@@ -154,8 +171,155 @@
     "monthSober_one": "día sin alcohol en {{month}}",
     "monthSober_other": "días sin alcohol en {{month}}"
   },
-  "soon": {
-    "title": "Llega en la próxima versión",
-    "journey": "Lo que suele cambiar a medida que sumas días sin alcohol."
+  "plan": {
+    "title": "Planifica la semana",
+    "intro": "Decide ahora qué días podrías beber, para que la elección ya esté hecha cuando llegue la noche.",
+    "goalLabel": "Máximo de días con alcohol por semana",
+    "counter": "{{count}} de {{goal}} planificados",
+    "plan": "Planificar",
+    "planned": "Planificado",
+    "sober": "Sin alcohol",
+    "drink": "Con alcohol",
+    "today": "Hoy",
+    "repeat": "Repetir cada semana",
+    "repeatSub": "Empezar cada semana con los mismos días",
+    "howTitle": "Cómo funcionan los días planificados",
+    "how1": "Si bebes dentro de tu límite en un día planificado, tu semana sigue según el plan.",
+    "how2": "Si te saltas un día planificado, simplemente pasa a ser un día sin alcohol.",
+    "how3": "Una bebida no planificada se registra igual, sin penalización.",
+    "save": "Guardar plan",
+    "fewer": "Un día menos",
+    "more": "Un día más",
+    "zero": "Una semana totalmente sin alcohol, sin días planificados.",
+    "back": "Atrás"
+  },
+  "journey": {
+    "intro": "Lo que suele cambiar a medida que sumas días sin alcohol. Registres lo que registres, aquí nada vuelve a cerrarse.",
+    "here": "Estás aquí",
+    "day": "Día {{count}}",
+    "best": "Racha más larga: {{count}}",
+    "opensAt": "Se abre el día {{count}}",
+    "topics": {
+      "all": "Todo",
+      "body": "Cuerpo",
+      "sleep": "Sueño",
+      "mind": "Mente"
+    },
+    "disclaimer": "Información general, no consejo médico. Si bebes mucho todos los días, habla con un médico antes de dejarlo: cortar el alcohol de golpe puede ser peligroso.",
+    "entries": {
+      "sleep1": {
+        "title": "El sueño se vuelve más ligero antes de mejorar",
+        "body": "El alcohol ayuda a dormirse, pero recorta el sueño con sueños más tarde en la noche. Las primeras noches sin él pueden ser inquietas mientras eso se reequilibra."
+      },
+      "water1": {
+        "title": "Rehidratarse",
+        "body": "El alcohol hace que pierdas más agua de la que tomas. Tras unos días sin él, la sed matutina y los dolores de cabeza suelen aliviarse."
+      },
+      "sleep7": {
+        "title": "Sueño más profundo",
+        "body": "Tras una semana, mucha gente tarda un poco más en dormirse, pero se despierta menos por la noche y se levanta más descansada."
+      },
+      "stomach14": {
+        "title": "Un estómago más tranquilo",
+        "body": "El alcohol irrita la mucosa del estómago y aumenta la acidez. Dos semanas sin él suelen bastar para que la acidez y la hinchazón se calmen."
+      },
+      "liver30": {
+        "title": "Hígado y tensión arterial",
+        "body": "En estudios con personas que bebían con regularidad y pararon un mes, la grasa del hígado y la tensión tendieron a bajar. Cuánto depende de lo que bebías antes."
+      },
+      "mind90": {
+        "title": "Ánimo y concentración",
+        "body": "Mucha gente nota un ánimo más estable y mañanas más despejadas tras unos meses. Beber menos puede ayudar, aunque no es un tratamiento para el ánimo bajo."
+      }
+    }
+  },
+  "onboarding": {
+    "welcomeTitle": "Sáltate una copa. Nota la diferencia.",
+    "welcomeBody": "Una forma tranquila de beber menos. Sin juicios ni sermones.",
+    "start": "Crear mi plan",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "progress": "Pregunta {{step}} de 7",
+    "q1": {
+      "title": "¿Qué te trae por aquí?",
+      "sub": "Marca el tono de la app. Puedes cambiarlo después."
+    },
+    "intent": {
+      "less": "Beber menos",
+      "lessSub": "Menos días y menos cantidad.",
+      "break": "Hacer una pausa",
+      "breakSub": "Un tiempo sin alcohol.",
+      "habits": "Ver mis hábitos",
+      "habitsSub": "Sin objetivo aún. Solo una imagen sincera."
+    },
+    "q2": {
+      "title": "¿Cuántos días a la semana bebes ahora?",
+      "sub": "Basta con una estimación sincera. Nadie más lo ve.",
+      "unit": "Días por semana, ahora",
+      "note": "Este es tu punto de partida. El progreso se mide respecto a él, no respecto a otros."
+    },
+    "q3": {
+      "title": "Un día que bebes, ¿cuánto es lo habitual?",
+      "sub": "Una bebida es una cerveza, una copa de vino o un chupito."
+    },
+    "amount": {
+      "a": "1 o 2 bebidas",
+      "b": "3 o 4 bebidas",
+      "c": "5 o 6 bebidas",
+      "d": "7 o más"
+    },
+    "q4": {
+      "title": "¿De qué te gustaría tener más?",
+      "sub": "Elige lo que te importe."
+    },
+    "why": {
+      "sleep": "Dormir mejor",
+      "energy": "Más energía",
+      "head": "La cabeza más despejada",
+      "fitness": "Forma física y peso",
+      "family": "Estar presente con la familia"
+    },
+    "q5": {
+      "title": "¿Cuántos días con alcohol a la semana te parecen bien?",
+      "sub": "Elige algo con lo que estarías a gusto, no algo heroico.",
+      "unit": "Días por semana, como máximo",
+      "leaves_one": "Eso deja {{count}} día sin alcohol cada semana.",
+      "leaves_other": "Eso deja {{count}} días sin alcohol cada semana.",
+      "fewer_one": "{{count}} día con alcohol menos que ahora.",
+      "fewer_other": "{{count}} días con alcohol menos que ahora."
+    },
+    "q6": {
+      "title": "¿Qué días esperas beber?",
+      "sub": "Elige hasta {{count}}. Puedes moverlos cada semana.",
+      "explain": "Un día planificado es un permiso, no un objetivo. Si te mantienes en tu límite, la semana sigue según el plan. Si te lo saltas, pasa a ser un día sin alcohol."
+    },
+    "q7": {
+      "title": "¿Cuándo te preguntamos?",
+      "sub": "Una pregunta tranquila al día. Responder es un solo toque."
+    },
+    "summaryTitle": "Tu plan está listo.",
+    "summaryMore": "{{count}} días sin alcohol más al año que ahora.",
+    "summaryFlat": "Una semana estable, registrada con sinceridad.",
+    "now": "Ahora",
+    "goal": "Objetivo",
+    "perWeek": "días con alcohol por semana",
+    "rowPlanned": "Días planificados",
+    "rowCheckin": "Recordatorio diario",
+    "none": "Ninguno",
+    "heavy": "Bebes casi todos los días. Reducir poco a poco es más seguro que dejarlo de golpe, y un médico puede ayudarte a hacerlo con comodidad.",
+    "finish": "Empezar"
+  },
+  "reminder": {
+    "evening": "Por la noche, 21:30",
+    "eveningSub": "¿Cómo ha ido hoy?",
+    "morning": "Por la mañana, 08:00",
+    "morningSub": "¿Cómo fue ayer?",
+    "off": "Sin recordatorio",
+    "offSub": "Abriré la app por mi cuenta.",
+    "short": {
+      "evening": "Noche",
+      "morning": "Mañana",
+      "off": "No"
+    }
   }
 }

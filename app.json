@@ -48,7 +48,8 @@
           "photosPermission": "Skip lets you pick a photo of a drink for your log.",
           "microphonePermission": false
         }
-      ]
+      ],
+      "expo-notifications"
     ],
     "experiments": {
       "typedRoutes": true,

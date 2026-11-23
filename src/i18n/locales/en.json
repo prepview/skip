@@ -29,7 +29,18 @@
     "dayToday": "today",
     "details": "Add details",
     "headlineDrinkToday": "Today is logged.",
-    "bodyDrinkToday": "A new run can start tomorrow. Nothing is lost by being honest."
+    "bodyDrinkToday": "A new run can start tomorrow. Nothing is lost by being honest.",
+    "planLink": "Plan the week",
+    "setGoal": "Set a weekly goal",
+    "plannedNone": "No drinking days planned.",
+    "plannedList": "Planned: {{days}}.",
+    "onPlan": "Week on plan",
+    "onPlanWeeks": "Week on plan · {{count}} weeks running",
+    "overPlan": "Over plan this week",
+    "dayPlanned": "planned drinking day",
+    "tipDay": "Day {{count}}",
+    "tipNoteLabel": "A thought",
+    "tipNote": "Anything you noticed? A short note helps you spot what works."
   },
   "profile": {
     "title": "Profile",
@@ -45,7 +56,13 @@
       "eu": "Europe",
       "uk": "UK",
       "us": "US"
-    }
+    },
+    "reminder": "Daily check-in",
+    "reminderDenied": "Notifications are turned off for Skip in your phone’s settings.",
+    "goal": "Weekly goal",
+    "goalNone": "Not set",
+    "goalValue_one": "At most {{count}} drinking day",
+    "goalValue_other": "At most {{count}} drinking days"
   },
   "log": {
     "sober": "Alcohol-free",
@@ -154,8 +171,155 @@
     "monthSober_one": "alcohol-free day in {{month}}",
     "monthSober_other": "alcohol-free days in {{month}}"
   },
-  "soon": {
-    "title": "Coming in the next build",
-    "journey": "What tends to change as alcohol-free days add up."
+  "plan": {
+    "title": "Plan the week",
+    "intro": "Decide now which days you might drink, so the choice is already made when the evening comes.",
+    "goalLabel": "Most drinking days a week",
+    "counter": "{{count}} of {{goal}} planned",
+    "plan": "Plan",
+    "planned": "Planned",
+    "sober": "Alcohol-free",
+    "drink": "With alcohol",
+    "today": "Today",
+    "repeat": "Repeat every week",
+    "repeatSub": "Start each week with the same days",
+    "howTitle": "How planned days work",
+    "how1": "Drink within your limit on a planned day and your week stays on plan.",
+    "how2": "Skip a planned day and it simply becomes an alcohol-free day.",
+    "how3": "An unplanned drink is logged the same way, with no penalty.",
+    "save": "Save plan",
+    "fewer": "One day fewer",
+    "more": "One day more",
+    "zero": "A fully alcohol-free week, with no planned days.",
+    "back": "Back"
+  },
+  "journey": {
+    "intro": "What tends to change as alcohol-free days add up. Whatever you log, nothing here closes again.",
+    "here": "You are here",
+    "day": "Day {{count}}",
+    "best": "Longest run: {{count}}",
+    "opensAt": "Opens at day {{count}}",
+    "topics": {
+      "all": "All",
+      "body": "Body",
+      "sleep": "Sleep",
+      "mind": "Mind"
+    },
+    "disclaimer": "General information, not medical advice. If you drink heavily every day, talk to a doctor before stopping: cutting out alcohol suddenly can be dangerous.",
+    "entries": {
+      "sleep1": {
+        "title": "Sleep gets lighter before it gets better",
+        "body": "Alcohol helps you fall asleep but cuts into dream sleep later in the night. The first nights without it can feel restless while that rebalances."
+      },
+      "water1": {
+        "title": "Rehydrating",
+        "body": "Alcohol makes you lose more water than you take in. After a few days without it, morning thirst and headaches tend to ease."
+      },
+      "sleep7": {
+        "title": "Deeper sleep",
+        "body": "After about a week many people take a little longer to fall asleep but wake less during the night and feel more rested in the morning."
+      },
+      "stomach14": {
+        "title": "A calmer stomach",
+        "body": "Alcohol irritates the stomach lining and increases acid. Two weeks without it is often enough for heartburn and bloating to settle."
+      },
+      "liver30": {
+        "title": "Liver and blood pressure",
+        "body": "In studies of regular drinkers who took a month off, liver fat and blood pressure tended to fall. How much depends on how much you drank before."
+      },
+      "mind90": {
+        "title": "Mood and focus",
+        "body": "Many people report a steadier mood and clearer mornings after a few months. Drinking less can help with that, though it is not a treatment for low mood."
+      }
+    }
+  },
+  "onboarding": {
+    "welcomeTitle": "Skip a drink. Notice the difference.",
+    "welcomeBody": "A calm way to drink less. No judgement and no lectures.",
+    "start": "Build my plan",
+    "continue": "Continue",
+    "back": "Back",
+    "progress": "Question {{step}} of 7",
+    "q1": {
+      "title": "What brings you here?",
+      "sub": "It sets the tone of the app. You can change it later."
+    },
+    "intent": {
+      "less": "Drink less",
+      "lessSub": "Fewer days and smaller amounts.",
+      "break": "Take a break",
+      "breakSub": "A stretch without alcohol.",
+      "habits": "See my habits",
+      "habitsSub": "No target yet. Just an honest picture."
+    },
+    "q2": {
+      "title": "How many days a week do you drink now?",
+      "sub": "A rough, honest guess is enough. Nobody else sees this.",
+      "unit": "Days a week, now",
+      "note": "This is your starting point. Progress is measured against it, not against anyone else."
+    },
+    "q3": {
+      "title": "On a day you drink, how much is typical?",
+      "sub": "One drink is a beer, a glass of wine or a shot."
+    },
+    "amount": {
+      "a": "1 to 2 drinks",
+      "b": "3 to 4 drinks",
+      "c": "5 to 6 drinks",
+      "d": "7 or more"
+    },
+    "q4": {
+      "title": "What would you like more of?",
+      "sub": "Pick any that matter to you."
+    },
+    "why": {
+      "sleep": "Better sleep",
+      "energy": "More energy",
+      "head": "A clearer head",
+      "fitness": "Fitness and weight",
+      "family": "Being present with family"
+    },
+    "q5": {
+      "title": "How many drinking days a week feels right?",
+      "sub": "Pick something you would be happy with, not something heroic.",
+      "unit": "Days a week, at most",
+      "leaves_one": "That leaves {{count}} alcohol-free day every week.",
+      "leaves_other": "That leaves {{count}} alcohol-free days every week.",
+      "fewer_one": "{{count}} drinking day fewer than now.",
+      "fewer_other": "{{count}} drinking days fewer than now."
+    },
+    "q6": {
+      "title": "Which days do you expect to drink?",
+      "sub": "Choose up to {{count}}. You can move them every week.",
+      "explain": "A planned day is permission, not a target. Stay within your limit and the week still counts as on plan. Skip it and it simply becomes an alcohol-free day."
+    },
+    "q7": {
+      "title": "When should we check in?",
+      "sub": "One quiet question a day. Answering takes a single tap."
+    },
+    "summaryTitle": "Your plan is ready.",
+    "summaryMore": "{{count}} more alcohol-free days a year than now.",
+    "summaryFlat": "A steady week, tracked honestly.",
+    "now": "Now",
+    "goal": "Goal",
+    "perWeek": "drinking days a week",
+    "rowPlanned": "Planned days",
+    "rowCheckin": "Daily check-in",
+    "none": "None",
+    "heavy": "You drink most days. Cutting down gradually is safer than stopping at once, and a doctor can help you do it comfortably.",
+    "finish": "Start tracking"
+  },
+  "reminder": {
+    "evening": "Evening, 21:30",
+    "eveningSub": "How did today go?",
+    "morning": "Morning, 08:00",
+    "morningSub": "How was yesterday?",
+    "off": "No reminder",
+    "offSub": "I will open the app myself.",
+    "short": {
+      "evening": "Evening",
+      "morning": "Morning",
+      "off": "Off"
+    }
   }
 }
