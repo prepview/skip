@@ -1,0 +1,42 @@
+{
+  "tabs": { "today": "Today", "calendar": "Calendar", "journey": "Journey", "stats": "Stats" },
+  "today": {
+    "streakLabel": "Alcohol-free streak",
+    "days_one": "Day",
+    "days_other": "Days",
+    "headlineStart": "Your first day starts here.",
+    "bodyStart": "Log today with one tap. Details can wait.",
+    "headlineStreak_one": "One day down.",
+    "headlineStreak_other": "{{count}} days in a row.",
+    "bodyStreak": "Each alcohol-free day counts, whatever came before.",
+    "headlineReset": "A new run starts today.",
+    "bodyReset": "Yesterday is logged. Nothing is lost by being honest.",
+    "checkinTitle": "How is today going?",
+    "sober": "Alcohol-free",
+    "drink": "I had a drink",
+    "loggedSober": "Today is logged as alcohol-free.",
+    "loggedDrink": "Today is logged.",
+    "undo": "Undo",
+    "profile": "Profile and settings",
+    "daySober": "alcohol-free",
+    "dayDrink": "with alcohol",
+    "dayOpen": "not logged",
+    "dayToday": "today"
+  },
+  "soon": {
+    "title": "Coming in the next build",
+    "calendar": "Month and year views of every day you log.",
+    "journey": "What tends to change as alcohol-free days add up.",
+    "stats": "Streaks, monthly totals and the days you drink most."
+  },
+  "profile": {
+    "title": "Profile",
+    "back": "Back",
+    "appearance": "Appearance",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "language": "Language",
+    "version": "Version {{version}}"
+  }
+}

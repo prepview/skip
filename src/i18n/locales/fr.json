@@ -1,0 +1,42 @@
+{
+  "tabs": { "today": "Aujourd’hui", "calendar": "Calendrier", "journey": "Parcours", "stats": "Stats" },
+  "today": {
+    "streakLabel": "Série sans alcool",
+    "days_one": "Jour",
+    "days_other": "Jours",
+    "headlineStart": "Ton premier jour commence ici.",
+    "bodyStart": "Note ta journée d’un seul geste. Les détails peuvent attendre.",
+    "headlineStreak_one": "Un jour de fait.",
+    "headlineStreak_other": "{{count}} jours d’affilée.",
+    "bodyStreak": "Chaque jour sans alcool compte, quoi qu’il y ait eu avant.",
+    "headlineReset": "Une nouvelle série commence aujourd’hui.",
+    "bodyReset": "Hier est noté. Être honnête ne te fait rien perdre.",
+    "checkinTitle": "Comment se passe ta journée ?",
+    "sober": "Sans alcool",
+    "drink": "J’ai bu un verre",
+    "loggedSober": "Aujourd’hui est noté comme jour sans alcool.",
+    "loggedDrink": "Aujourd’hui est noté.",
+    "undo": "Annuler",
+    "profile": "Profil et réglages",
+    "daySober": "sans alcool",
+    "dayDrink": "avec alcool",
+    "dayOpen": "non noté",
+    "dayToday": "aujourd’hui"
+  },
+  "soon": {
+    "title": "Arrive dans la prochaine version",
+    "calendar": "Vues par mois et par année de chaque jour noté.",
+    "journey": "Ce qui change souvent quand les jours sans alcool s’additionnent.",
+    "stats": "Séries, totaux par mois et les jours où tu bois le plus."
+  },
+  "profile": {
+    "title": "Profil",
+    "back": "Retour",
+    "appearance": "Apparence",
+    "system": "Système",
+    "light": "Clair",
+    "dark": "Sombre",
+    "language": "Langue",
+    "version": "Version {{version}}"
+  }
+}

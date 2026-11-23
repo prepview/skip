@@ -1,0 +1,42 @@
+{
+  "tabs": { "today": "Heute", "calendar": "Kalender", "journey": "Weg", "stats": "Statistik" },
+  "today": {
+    "streakLabel": "Alkoholfreie Serie",
+    "days_one": "Tag",
+    "days_other": "Tage",
+    "headlineStart": "Dein erster Tag beginnt hier.",
+    "bodyStart": "Trag heute mit einem Tipp ein. Details können warten.",
+    "headlineStreak_one": "Ein Tag geschafft.",
+    "headlineStreak_other": "{{count}} Tage in Folge.",
+    "bodyStreak": "Jeder alkoholfreie Tag zählt, egal was davor war.",
+    "headlineReset": "Heute beginnt eine neue Serie.",
+    "bodyReset": "Gestern ist eingetragen. Ehrlichkeit kostet dich nichts.",
+    "checkinTitle": "Wie läuft dein Tag?",
+    "sober": "Alkoholfrei",
+    "drink": "Ich habe getrunken",
+    "loggedSober": "Heute ist als alkoholfrei eingetragen.",
+    "loggedDrink": "Heute ist eingetragen.",
+    "undo": "Rückgängig",
+    "profile": "Profil und Einstellungen",
+    "daySober": "alkoholfrei",
+    "dayDrink": "mit Alkohol",
+    "dayOpen": "nicht eingetragen",
+    "dayToday": "heute"
+  },
+  "soon": {
+    "title": "Kommt mit der nächsten Version",
+    "calendar": "Monats- und Jahresansicht aller eingetragenen Tage.",
+    "journey": "Was sich oft verändert, wenn alkoholfreie Tage zusammenkommen.",
+    "stats": "Serien, Monatswerte und die Tage, an denen du am meisten trinkst."
+  },
+  "profile": {
+    "title": "Profil",
+    "back": "Zurück",
+    "appearance": "Darstellung",
+    "system": "System",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "language": "Sprache",
+    "version": "Version {{version}}"
+  }
+}

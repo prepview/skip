@@ -1,0 +1,42 @@
+{
+  "tabs": { "today": "Hoy", "calendar": "Calendario", "journey": "Camino", "stats": "Datos" },
+  "today": {
+    "streakLabel": "Racha sin alcohol",
+    "days_one": "Día",
+    "days_other": "Días",
+    "headlineStart": "Tu primer día empieza aquí.",
+    "bodyStart": "Registra hoy con un toque. Los detalles pueden esperar.",
+    "headlineStreak_one": "Un día conseguido.",
+    "headlineStreak_other": "{{count}} días seguidos.",
+    "bodyStreak": "Cada día sin alcohol cuenta, pase lo que pase antes.",
+    "headlineReset": "Hoy empieza una nueva racha.",
+    "bodyReset": "Ayer está registrado. Ser sincero no te quita nada.",
+    "checkinTitle": "¿Cómo va tu día?",
+    "sober": "Sin alcohol",
+    "drink": "He bebido",
+    "loggedSober": "Hoy está registrado como día sin alcohol.",
+    "loggedDrink": "Hoy está registrado.",
+    "undo": "Deshacer",
+    "profile": "Perfil y ajustes",
+    "daySober": "sin alcohol",
+    "dayDrink": "con alcohol",
+    "dayOpen": "sin registrar",
+    "dayToday": "hoy"
+  },
+  "soon": {
+    "title": "Llega en la próxima versión",
+    "calendar": "Vistas de mes y de año con cada día que registres.",
+    "journey": "Lo que suele cambiar a medida que sumas días sin alcohol.",
+    "stats": "Rachas, totales por mes y los días en que más bebes."
+  },
+  "profile": {
+    "title": "Perfil",
+    "back": "Atrás",
+    "appearance": "Apariencia",
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "language": "Idioma",
+    "version": "Versión {{version}}"
+  }
+}
