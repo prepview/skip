@@ -13,6 +13,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 
 import { DaysProvider } from '@/data/days';
+import { SettingsProvider } from '@/data/settings';
 import { restoreLanguage } from '@/i18n';
 import { ThemeProvider, useTheme } from '@/theme/ThemeProvider';
 
@@ -44,9 +45,11 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider>
-      <DaysProvider>
-        <Shell />
-      </DaysProvider>
+      <SettingsProvider>
+        <DaysProvider>
+          <Shell />
+        </DaysProvider>
+      </SettingsProvider>
     </ThemeProvider>
   );
 }

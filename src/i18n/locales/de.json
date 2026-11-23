@@ -1,5 +1,10 @@
 {
-  "tabs": { "today": "Heute", "calendar": "Kalender", "journey": "Weg", "stats": "Statistik" },
+  "tabs": {
+    "today": "Heute",
+    "calendar": "Kalender",
+    "journey": "Weg",
+    "stats": "Statistik"
+  },
   "today": {
     "streakLabel": "Alkoholfreie Serie",
     "days_one": "Tag",
@@ -21,13 +26,10 @@
     "daySober": "alkoholfrei",
     "dayDrink": "mit Alkohol",
     "dayOpen": "nicht eingetragen",
-    "dayToday": "heute"
-  },
-  "soon": {
-    "title": "Kommt mit der nächsten Version",
-    "calendar": "Monats- und Jahresansicht aller eingetragenen Tage.",
-    "journey": "Was sich oft verändert, wenn alkoholfreie Tage zusammenkommen.",
-    "stats": "Serien, Monatswerte und die Tage, an denen du am meisten trinkst."
+    "dayToday": "heute",
+    "details": "Details ergänzen",
+    "headlineDrinkToday": "Heute ist eingetragen.",
+    "bodyDrinkToday": "Morgen kann eine neue Serie beginnen. Ehrlichkeit kostet dich nichts."
   },
   "profile": {
     "title": "Profil",
@@ -37,6 +39,123 @@
     "light": "Hell",
     "dark": "Dunkel",
     "language": "Sprache",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "region": "Region und Getränkegrößen",
+    "regions": {
+      "eu": "Europa",
+      "uk": "UK",
+      "us": "USA"
+    }
+  },
+  "log": {
+    "sober": "Alkoholfrei",
+    "drink": "Getrunken",
+    "soberNote": "Ein alkoholfreier Tag. Eine Notiz ist freiwillig.",
+    "drinks_one": "{{count}} Getränk",
+    "drinks_other": "{{count}} Getränke",
+    "grams": "{{grams}} g reiner Alkohol",
+    "nothing": "Nichts eingetragen",
+    "light": "Leichter Tag",
+    "moderate": "Mittlerer Tag",
+    "heavy": "Schwerer Tag",
+    "addPhoto": "Foto von deinem Getränk hinzufügen",
+    "removePhoto": "Foto entfernen",
+    "photo": "Foto des Getränks",
+    "occasion": "Was war der Anlass?",
+    "feel": "Wie fühlst du dich?",
+    "note": "Notiz",
+    "notePlaceholder": "Gibt es etwas, das du dir zu diesem Tag merken willst?",
+    "save": "Tag speichern",
+    "back": "Zurück",
+    "clear": "Diesen Tag leeren",
+    "changeSize": "{{drink}}, Größe ändern",
+    "more": "Eins mehr: {{drink}}",
+    "less": "Eins weniger: {{drink}}"
+  },
+  "drinks": {
+    "beer": "Bier",
+    "wine": "Wein",
+    "spirits": "Spirituosen",
+    "cocktail": "Cocktail",
+    "sparkling": "Sekt"
+  },
+  "sizes": {
+    "pint": "Pint",
+    "halfPint": "Halbes Pint",
+    "single": "Einfach",
+    "double": "Doppelt"
+  },
+  "units": {
+    "standard_one": "Standardglas",
+    "standard_other": "Standardgläser",
+    "uk_one": "Einheit",
+    "uk_other": "Einheiten"
+  },
+  "moods": {
+    "great": "Super",
+    "good": "Gut",
+    "okay": "Okay",
+    "rough": "Mies"
+  },
+  "tags": {
+    "social": "Mit Freunden",
+    "food": "Zum Essen",
+    "celebration": "Feier",
+    "stress": "Stress",
+    "habit": "Gewohnheit",
+    "bored": "Langeweile"
+  },
+  "calendar": {
+    "notLogged": "Nicht eingetragen",
+    "upcoming": "Kommt noch",
+    "logDay": "Diesen Tag eintragen",
+    "edit": "Bearbeiten",
+    "noAlcohol": "Kein Alkohol eingetragen.",
+    "noDetail": "Ein Tag mit Alkohol. Keine Details eingetragen.",
+    "nothingYet": "Für diesen Tag ist nichts eingetragen.",
+    "soberDays_one": "alkoholfreier Tag",
+    "soberDays_other": "alkoholfreie Tage",
+    "drinkDays_one": "Tag mit Alkohol",
+    "drinkDays_other": "Tage mit Alkohol",
+    "prev": "Vorheriger Monat",
+    "next": "Nächster Monat",
+    "showYear": "Ganzes Jahr anzeigen",
+    "prevYear": "Vorheriges Jahr",
+    "nextYear": "Nächstes Jahr",
+    "open": "{{month}} öffnen",
+    "level": {
+      "sober": "Alkoholfrei",
+      "light": "Leicht",
+      "moderate": "Mittel",
+      "heavy": "Schwer"
+    }
+  },
+  "stats": {
+    "subtitle": "Alles, was du eingetragen hast",
+    "percent": "der eingetragenen Tage alkoholfrei",
+    "perMonth": "Alkoholfreie Tage pro Monat",
+    "avgWeek": "Eine durchschnittliche Woche",
+    "avgSober": "alkoholfreie Tage",
+    "avgDrink": "Tage mit Alkohol",
+    "weekdayTitle": "Am {{day}} trinkst du am meisten.",
+    "weekdaySub": "Tage mit Alkohol nach Wochentag",
+    "howMuch": "Wie viel",
+    "perDrinkDay": "{{unit}} an einem Tag mit Alkohol",
+    "perDay": "{{unit}} pro Tag, alle Tage",
+    "empty": "Trag ein paar Tage ein, dann erscheinen hier deine Zahlen.",
+    "currentStreak_one": "Tag alkoholfrei in Folge, aktuell",
+    "currentStreak_other": "Tage alkoholfrei in Folge, aktuell",
+    "longestSober_one": "Tag, längste alkoholfreie Serie",
+    "longestSober_other": "Tage, längste alkoholfreie Serie",
+    "longestDrink_one": "Tag, längste Serie mit Alkohol",
+    "longestDrink_other": "Tage, längste Serie mit Alkohol",
+    "weekDrink_one": "Tag mit Alkohol diese Woche",
+    "weekDrink_other": "Tage mit Alkohol diese Woche",
+    "monthSober_one": "alkoholfreier Tag im {{month}}",
+    "monthSober_other": "alkoholfreie Tage im {{month}}"
+  },
+  "soon": {
+    "title": "Kommt mit der nächsten Version",
+    "journey": "Was sich oft verändert, wenn alkoholfreie Tage zusammenkommen."
   }
 }

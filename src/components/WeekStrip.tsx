@@ -7,6 +7,7 @@ import { useTheme } from '@/theme/ThemeProvider';
 import { fonts } from '@/theme/tokens';
 
 import { Icon } from './Icon';
+import { entryLevel, levelColors } from './levels';
 import { Text } from './Text';
 
 type Props = { days: DayMap; today: Date };
@@ -24,6 +25,8 @@ export function WeekStrip({ days, today }: Props) {
       {weekOf(today).map((date) => {
         const key = dateKey(date);
         const status = days[key]?.status;
+        const level = entryLevel(days[key]);
+        const paint = level ? levelColors(level, colors) : null;
         const isToday = key === todayKey;
         const state = status === 'sober' ? t('today.daySober') : status === 'drink' ? t('today.dayDrink') : t('today.dayOpen');
         const label = [longName.format(date), isToday ? t('today.dayToday') : null, state].filter(Boolean).join(', ');
@@ -35,12 +38,11 @@ export function WeekStrip({ days, today }: Props) {
             <View
               style={[
                 styles.dot,
-                status === 'sober' && { backgroundColor: colors.accent },
-                status === 'drink' && { backgroundColor: colors.light },
+                paint && { backgroundColor: paint.fill },
                 !status && { borderWidth: isToday ? 1.5 : 1, borderColor: isToday ? colors.text : colors.line },
               ]}>
-              {status === 'sober' && <Icon name="check" size={18} color={colors.onAccent} strokeWidth={2.25} />}
-              {status === 'drink' && <Icon name="glass" size={17} color="#0C1114" strokeWidth={1.75} />}
+              {status === 'sober' && <Icon name="check" size={18} color={paint?.on ?? colors.onAccent} strokeWidth={2.25} />}
+              {status === 'drink' && <Icon name="glass" size={17} color={paint?.on ?? '#0C1114'} strokeWidth={1.75} />}
               {!status && (
                 <Text variant="bodyStrong" color={isToday ? colors.text : colors.textMuted}>
                   {date.getDate()}

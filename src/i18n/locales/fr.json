@@ -1,5 +1,10 @@
 {
-  "tabs": { "today": "Aujourd’hui", "calendar": "Calendrier", "journey": "Parcours", "stats": "Stats" },
+  "tabs": {
+    "today": "Aujourd’hui",
+    "calendar": "Calendrier",
+    "journey": "Parcours",
+    "stats": "Stats"
+  },
   "today": {
     "streakLabel": "Série sans alcool",
     "days_one": "Jour",
@@ -21,13 +26,10 @@
     "daySober": "sans alcool",
     "dayDrink": "avec alcool",
     "dayOpen": "non noté",
-    "dayToday": "aujourd’hui"
-  },
-  "soon": {
-    "title": "Arrive dans la prochaine version",
-    "calendar": "Vues par mois et par année de chaque jour noté.",
-    "journey": "Ce qui change souvent quand les jours sans alcool s’additionnent.",
-    "stats": "Séries, totaux par mois et les jours où tu bois le plus."
+    "dayToday": "aujourd’hui",
+    "details": "Ajouter des détails",
+    "headlineDrinkToday": "Aujourd’hui est noté.",
+    "bodyDrinkToday": "Une nouvelle série peut commencer demain. Être honnête ne te fait rien perdre."
   },
   "profile": {
     "title": "Profil",
@@ -37,6 +39,123 @@
     "light": "Clair",
     "dark": "Sombre",
     "language": "Langue",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "region": "Région et tailles des verres",
+    "regions": {
+      "eu": "Europe",
+      "uk": "Royaume-Uni",
+      "us": "États-Unis"
+    }
+  },
+  "log": {
+    "sober": "Sans alcool",
+    "drink": "J’ai bu",
+    "soberNote": "Un jour sans alcool. La note est facultative.",
+    "drinks_one": "{{count}} verre",
+    "drinks_other": "{{count}} verres",
+    "grams": "{{grams}} g d’alcool pur",
+    "nothing": "Rien d’ajouté",
+    "light": "Jour léger",
+    "moderate": "Jour modéré",
+    "heavy": "Jour chargé",
+    "addPhoto": "Ajoute une photo de ton verre",
+    "removePhoto": "Retirer la photo",
+    "photo": "Photo du verre",
+    "occasion": "C’était à quelle occasion ?",
+    "feel": "Comment tu te sens ?",
+    "note": "Note",
+    "notePlaceholder": "Quelque chose à retenir de cette journée ?",
+    "save": "Enregistrer la journée",
+    "back": "Retour",
+    "clear": "Vider cette journée",
+    "changeSize": "{{drink}}, changer la taille",
+    "more": "Un de plus : {{drink}}",
+    "less": "Un de moins : {{drink}}"
+  },
+  "drinks": {
+    "beer": "Bière",
+    "wine": "Vin",
+    "spirits": "Spiritueux",
+    "cocktail": "Cocktail",
+    "sparkling": "Pétillant"
+  },
+  "sizes": {
+    "pint": "Pinte",
+    "halfPint": "Demi-pinte",
+    "single": "Simple",
+    "double": "Double"
+  },
+  "units": {
+    "standard_one": "verre standard",
+    "standard_other": "verres standard",
+    "uk_one": "unité",
+    "uk_other": "unités"
+  },
+  "moods": {
+    "great": "Super",
+    "good": "Bien",
+    "okay": "Moyen",
+    "rough": "Dur"
+  },
+  "tags": {
+    "social": "Entre amis",
+    "food": "À table",
+    "celebration": "Fête",
+    "stress": "Stress",
+    "habit": "Habitude",
+    "bored": "Ennui"
+  },
+  "calendar": {
+    "notLogged": "Non noté",
+    "upcoming": "À venir",
+    "logDay": "Noter cette journée",
+    "edit": "Modifier",
+    "noAlcohol": "Aucun alcool noté.",
+    "noDetail": "Un jour avec alcool. Aucun détail ajouté.",
+    "nothingYet": "Rien n’est noté pour cette journée.",
+    "soberDays_one": "jour sans alcool",
+    "soberDays_other": "jours sans alcool",
+    "drinkDays_one": "jour avec alcool",
+    "drinkDays_other": "jours avec alcool",
+    "prev": "Mois précédent",
+    "next": "Mois suivant",
+    "showYear": "Voir toute l’année",
+    "prevYear": "Année précédente",
+    "nextYear": "Année suivante",
+    "open": "Ouvrir {{month}}",
+    "level": {
+      "sober": "Sans alcool",
+      "light": "Léger",
+      "moderate": "Modéré",
+      "heavy": "Chargé"
+    }
+  },
+  "stats": {
+    "subtitle": "Tout ce que tu as noté",
+    "percent": "des jours notés sans alcool",
+    "perMonth": "Jours sans alcool par mois",
+    "avgWeek": "Une semaine moyenne",
+    "avgSober": "jours sans alcool",
+    "avgDrink": "jours avec alcool",
+    "weekdayTitle": "C’est le {{day}} que tu bois le plus.",
+    "weekdaySub": "Jours avec alcool par jour de la semaine",
+    "howMuch": "Combien",
+    "perDrinkDay": "{{unit}} un jour avec alcool",
+    "perDay": "{{unit}} par jour, tous les jours",
+    "empty": "Note quelques jours et tes chiffres apparaîtront ici.",
+    "currentStreak_one": "jour sans alcool d’affilée, en ce moment",
+    "currentStreak_other": "jours sans alcool d’affilée, en ce moment",
+    "longestSober_one": "jour, plus longue série sans alcool",
+    "longestSober_other": "jours, plus longue série sans alcool",
+    "longestDrink_one": "jour, plus longue série avec alcool",
+    "longestDrink_other": "jours, plus longue série avec alcool",
+    "weekDrink_one": "jour avec alcool cette semaine",
+    "weekDrink_other": "jours avec alcool cette semaine",
+    "monthSober_one": "jour sans alcool en {{month}}",
+    "monthSober_other": "jours sans alcool en {{month}}"
+  },
+  "soon": {
+    "title": "Arrive dans la prochaine version",
+    "journey": "Ce qui change souvent quand les jours sans alcool s’additionnent."
   }
 }

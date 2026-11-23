@@ -1,6 +1,8 @@
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
 
-export type IconName = 'today' | 'calendar' | 'journey' | 'stats' | 'check' | 'glass' | 'person' | 'back';
+import { extra, type IconName } from './Icon.paths';
+
+export type { IconName };
 
 type Props = { name: IconName; size?: number; color: string; strokeWidth?: number };
 
@@ -42,6 +44,7 @@ export function Icon({ name, size = 22, color, strokeWidth = 1.5 }: Props) {
         </>
       )}
       {name === 'back' && <Path d="M14.5 6l-6 6 6 6" {...stroke} />}
+      {extra[name]?.map((d) => <Path key={d} d={d} {...stroke} />)}
     </Svg>
   );
 }

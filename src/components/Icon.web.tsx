@@ -1,8 +1,11 @@
-import type { IconName } from './Icon';
+import { extra, type IconName } from './Icon.paths';
+
+export type { IconName };
 
 type Props = { name: IconName; size?: number; color: string; strokeWidth?: number };
 
-const paths: Record<IconName, string[]> = {
+const paths: Partial<Record<IconName, string[]>> = {
+  ...extra,
   today: ['M4 12a8 8 0 1 0 16 0a8 8 0 1 0 -16 0', 'M9.5 12a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0'],
   calendar: ['M6.5 5.5h11a2.5 2.5 0 0 1 2.5 2.5v9.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5V8a2.5 2.5 0 0 1 2.5-2.5z', 'M4 10h16M8.5 3.5v4M15.5 3.5v4'],
   journey: ['M12 20v-8', 'M12 12c0-3.5 2.5-6 7-6 0 3.5-2.5 6-7 6z', 'M12 14c0-2.5-2-4.5-6-4.5 0 2.5 2 4.5 6 4.5z'],
@@ -29,7 +32,7 @@ export function Icon({ name, size = 22, color, strokeWidth = 1.5 }: Props) {
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round">
-      {paths[name].map((d) => (
+      {(paths[name] ?? []).map((d) => (
         <path key={d} d={d} />
       ))}
     </svg>

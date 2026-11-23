@@ -4,12 +4,16 @@ A calm tracker for drinking less. iOS first, built with Expo (React Native) so A
 
 ## Status
 
-Stage 1 of the v1 build: the app shell.
+Stages 1 and 2 of the v1 build.
 
-- Today screen with one-tap logging, the alcohol-free streak and the week strip. Days are stored on the device.
+- Today screen with one-tap logging, the alcohol-free streak and the week strip.
+- Day logging: drink types with regional serving sizes (Europe, UK, US), a photo, mood, occasion tags and a note. Totals are shown in local units and grams of pure alcohol.
+- Calendar with month and year views, coloured by how heavy each day was.
+- Stats: streaks, monthly totals, an average week, the heaviest weekday and average amounts.
 - Dark, light and system themes.
 - English, German, Spanish and French. The app follows the phone's language and can be switched in Profile.
-- Calendar, Journey and Stats tabs are placeholders until their stages land.
+- Everything is stored on the device. Accounts and sync come in a later stage.
+- The Journey tab is a placeholder until its stage lands.
 
 ## Run it
 
@@ -35,4 +39,4 @@ npx tsc --noEmit
 - `src/components` holds shared pieces such as the tab bar icons, the sunrise backdrop and the week strip.
 - `src/theme` holds colour and type tokens and the theme setting.
 - `src/i18n` holds the language setup and one JSON file per language.
-- `src/data` holds on-device storage and the day log.
+- `src/data` holds on-device storage, the day log, drink sizes and the statistics maths.

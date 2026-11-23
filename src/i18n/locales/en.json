@@ -1,5 +1,10 @@
 {
-  "tabs": { "today": "Today", "calendar": "Calendar", "journey": "Journey", "stats": "Stats" },
+  "tabs": {
+    "today": "Today",
+    "calendar": "Calendar",
+    "journey": "Journey",
+    "stats": "Stats"
+  },
   "today": {
     "streakLabel": "Alcohol-free streak",
     "days_one": "Day",
@@ -21,13 +26,10 @@
     "daySober": "alcohol-free",
     "dayDrink": "with alcohol",
     "dayOpen": "not logged",
-    "dayToday": "today"
-  },
-  "soon": {
-    "title": "Coming in the next build",
-    "calendar": "Month and year views of every day you log.",
-    "journey": "What tends to change as alcohol-free days add up.",
-    "stats": "Streaks, monthly totals and the days you drink most."
+    "dayToday": "today",
+    "details": "Add details",
+    "headlineDrinkToday": "Today is logged.",
+    "bodyDrinkToday": "A new run can start tomorrow. Nothing is lost by being honest."
   },
   "profile": {
     "title": "Profile",
@@ -37,6 +39,123 @@
     "light": "Light",
     "dark": "Dark",
     "language": "Language",
-    "version": "Version {{version}}"
+    "version": "Version {{version}}",
+    "region": "Region and drink sizes",
+    "regions": {
+      "eu": "Europe",
+      "uk": "UK",
+      "us": "US"
+    }
+  },
+  "log": {
+    "sober": "Alcohol-free",
+    "drink": "Had a drink",
+    "soberNote": "An alcohol-free day. A note is optional.",
+    "drinks_one": "{{count}} drink",
+    "drinks_other": "{{count}} drinks",
+    "grams": "{{grams}} g of pure alcohol",
+    "nothing": "Nothing added",
+    "light": "Light day",
+    "moderate": "Moderate day",
+    "heavy": "Heavy day",
+    "addPhoto": "Add a photo of your drink",
+    "removePhoto": "Remove photo",
+    "photo": "Photo of the drink",
+    "occasion": "What was the occasion?",
+    "feel": "How do you feel?",
+    "note": "Note",
+    "notePlaceholder": "Anything worth remembering about this day?",
+    "save": "Save day",
+    "back": "Back",
+    "clear": "Clear this day",
+    "changeSize": "{{drink}}, change serving size",
+    "more": "One more: {{drink}}",
+    "less": "One less: {{drink}}"
+  },
+  "drinks": {
+    "beer": "Beer",
+    "wine": "Wine",
+    "spirits": "Spirits",
+    "cocktail": "Cocktail",
+    "sparkling": "Sparkling"
+  },
+  "sizes": {
+    "pint": "Pint",
+    "halfPint": "Half pint",
+    "single": "Single",
+    "double": "Double"
+  },
+  "units": {
+    "standard_one": "standard drink",
+    "standard_other": "standard drinks",
+    "uk_one": "unit",
+    "uk_other": "units"
+  },
+  "moods": {
+    "great": "Great",
+    "good": "Good",
+    "okay": "Okay",
+    "rough": "Rough"
+  },
+  "tags": {
+    "social": "Social",
+    "food": "With food",
+    "celebration": "Celebration",
+    "stress": "Stress",
+    "habit": "Habit",
+    "bored": "Bored"
+  },
+  "calendar": {
+    "notLogged": "Not logged",
+    "upcoming": "Upcoming",
+    "logDay": "Log this day",
+    "edit": "Edit",
+    "noAlcohol": "No alcohol logged.",
+    "noDetail": "A drinking day. No details added.",
+    "nothingYet": "Nothing logged for this day.",
+    "soberDays_one": "alcohol-free day",
+    "soberDays_other": "alcohol-free days",
+    "drinkDays_one": "drinking day",
+    "drinkDays_other": "drinking days",
+    "prev": "Previous month",
+    "next": "Next month",
+    "showYear": "Show the whole year",
+    "prevYear": "Previous year",
+    "nextYear": "Next year",
+    "open": "Open {{month}}",
+    "level": {
+      "sober": "Alcohol-free",
+      "light": "Light",
+      "moderate": "Moderate",
+      "heavy": "Heavy"
+    }
+  },
+  "stats": {
+    "subtitle": "Everything you have logged",
+    "percent": "of logged days alcohol-free",
+    "perMonth": "Alcohol-free days per month",
+    "avgWeek": "An average week",
+    "avgSober": "alcohol-free days",
+    "avgDrink": "days with alcohol",
+    "weekdayTitle": "{{day}} is when you drink most.",
+    "weekdaySub": "Drinking days by weekday",
+    "howMuch": "How much",
+    "perDrinkDay": "{{unit}} on a drinking day",
+    "perDay": "{{unit}} a day, all days",
+    "empty": "Log a few days and your numbers appear here.",
+    "currentStreak_one": "day alcohol-free in a row, now",
+    "currentStreak_other": "days alcohol-free in a row, now",
+    "longestSober_one": "day, longest alcohol-free run",
+    "longestSober_other": "days, longest alcohol-free run",
+    "longestDrink_one": "day, longest run with alcohol",
+    "longestDrink_other": "days, longest run with alcohol",
+    "weekDrink_one": "drinking day this week",
+    "weekDrink_other": "drinking days this week",
+    "monthSober_one": "alcohol-free day in {{month}}",
+    "monthSober_other": "alcohol-free days in {{month}}"
+  },
+  "soon": {
+    "title": "Coming in the next build",
+    "journey": "What tends to change as alcohol-free days add up."
   }
 }

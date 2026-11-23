@@ -1,4 +1,4 @@
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -28,15 +28,10 @@ export default function TodayScreen() {
 
   const dateLabel = new Intl.DateTimeFormat(dateLocale(), { weekday: 'long', day: 'numeric', month: 'long' }).format(today);
 
-  // Three states: a running streak, a fresh start after a drinking day, or nothing logged yet.
-  const headline =
-    streak > 0
-      ? t('today.headlineStreak', { count: streak })
-      : lastLogged?.status === 'drink'
-        ? t('today.headlineReset')
-        : t('today.headlineStart');
-  const body =
-    streak > 0 ? t('today.bodyStreak') : lastLogged?.status === 'drink' ? t('today.bodyReset') : t('today.bodyStart');
+  // Four states: a running streak, a drink logged today, a fresh start after yesterday's drink, or nothing logged yet.
+  const state = streak > 0 ? 'Streak' : todayStatus === 'drink' ? 'DrinkToday' : lastLogged?.status === 'drink' ? 'Reset' : 'Start';
+  const headline = t(`today.headline${state}`, { count: streak });
+  const body = t(`today.body${state}`);
 
   return (
     <ScrollView
@@ -82,12 +77,24 @@ export default function TodayScreen() {
             <Text variant="title" style={styles.checkinTitle}>
               {todayStatus === 'sober' ? t('today.loggedSober') : t('today.loggedDrink')}
             </Text>
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => setDay(todayKey, null)}
-              style={[styles.button, { borderWidth: 1, borderColor: colors.line }]}>
-              <Text variant="bodyStrong">{t('today.undo')}</Text>
-            </Pressable>
+            <View style={styles.buttons}>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => router.push(`/log/${todayKey}`)}
+                style={[styles.button, styles.half, { borderWidth: 1, borderColor: colors.lineStrong }]}>
+                <Text variant="bodyStrong" numberOfLines={1} adjustsFontSizeToFit>
+                  {t('today.details')}
+                </Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setDay(todayKey, null)}
+                style={[styles.button, styles.half, { borderWidth: 1, borderColor: colors.line }]}>
+                <Text variant="bodyStrong" numberOfLines={1} adjustsFontSizeToFit>
+                  {t('today.undo')}
+                </Text>
+              </Pressable>
+            </View>
           </View>
         ) : (
           <View style={styles.checkin}>
@@ -97,7 +104,7 @@ export default function TodayScreen() {
             <View style={styles.buttons}>
               <Pressable
                 accessibilityRole="button"
-                onPress={() => setDay(todayKey, 'sober')}
+                onPress={() => setDay(todayKey, { status: 'sober' })}
                 style={[styles.button, styles.half, { backgroundColor: colors.accent }]}>
                 <Text variant="bodyStrong" color={colors.onAccent} numberOfLines={1} adjustsFontSizeToFit>
                   {t('today.sober')}
@@ -105,7 +112,7 @@ export default function TodayScreen() {
               </Pressable>
               <Pressable
                 accessibilityRole="button"
-                onPress={() => setDay(todayKey, 'drink')}
+                onPress={() => router.push(`/log/${todayKey}`)}
                 style={[styles.button, styles.half, { borderWidth: 1, borderColor: colors.lineStrong }]}>
                 <Text variant="bodyStrong" numberOfLines={1} adjustsFontSizeToFit>
                   {t('today.drink')}

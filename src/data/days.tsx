@@ -1,9 +1,24 @@
 import { createContext, use, useEffect, useMemo, useState, type ReactNode } from 'react';
 
+import type { DrinkLine } from './drinks';
 import { readJson, writeJson } from './storage';
 
 export type DayStatus = 'sober' | 'drink';
-export type DayEntry = { status: DayStatus };
+export type Mood = 'great' | 'good' | 'okay' | 'rough';
+export type Tag = 'social' | 'food' | 'celebration' | 'stress' | 'habit' | 'bored';
+
+export const moods: readonly Mood[] = ['great', 'good', 'okay', 'rough'];
+export const tags: readonly Tag[] = ['social', 'food', 'celebration', 'stress', 'habit', 'bored'];
+
+export type DayEntry = {
+  status: DayStatus;
+  drinks?: DrinkLine[];
+  mood?: Mood;
+  tags?: Tag[];
+  note?: string;
+  /** File name of the day's photo, resolved through data/photos. */
+  photo?: string;
+};
 export type DayMap = Record<string, DayEntry>;
 
 const KEY = 'skip.days.v1';
@@ -13,6 +28,14 @@ export function dateKey(date: Date): string {
   const m = String(date.getMonth() + 1).padStart(2, '0');
   const d = String(date.getDate()).padStart(2, '0');
   return `${date.getFullYear()}-${m}-${d}`;
+}
+
+/** Turns a YYYY-MM-DD key back into a local date. Returns null for anything malformed. */
+export function parseKey(key: string): Date | null {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(key);
+  if (!match) return null;
+  const date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  return dateKey(date) === key ? date : null;
 }
 
 export function addDays(date: Date, amount: number): Date {
@@ -45,7 +68,7 @@ export function soberStreak(days: DayMap, today: Date): number {
 type DaysValue = {
   ready: boolean;
   days: DayMap;
-  setDay: (key: string, status: DayStatus | null) => void;
+  setDay: (key: string, entry: DayEntry | null) => void;
 };
 
 const DaysContext = createContext<DaysValue | null>(null);
@@ -65,10 +88,10 @@ export function DaysProvider({ children }: { children: ReactNode }) {
     () => ({
       ready,
       days,
-      setDay: (key, status) => {
+      setDay: (key, entry) => {
         setDays((current) => {
           const next = { ...current };
-          if (status) next[key] = { status };
+          if (entry) next[key] = entry;
           else delete next[key];
           writeJson(KEY, next);
           return next;

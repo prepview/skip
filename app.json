@@ -40,6 +40,14 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Skip uses the camera so you can add a photo of a drink to your log.",
+          "photosPermission": "Skip lets you pick a photo of a drink for your log.",
+          "microphonePermission": false
+        }
       ]
     ],
     "experiments": {

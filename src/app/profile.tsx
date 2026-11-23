@@ -7,6 +7,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
 import { Segmented } from '@/components/Segmented';
 import { Text } from '@/components/Text';
+import type { Region } from '@/data/drinks';
+import { useSettings } from '@/data/settings';
 import { languages, setLanguage, type LanguageCode } from '@/i18n';
 import { useTheme, type ThemePreference } from '@/theme/ThemeProvider';
 
@@ -14,7 +16,13 @@ export default function ProfileScreen() {
   const { t, i18n } = useTranslation();
   const { colors, preference, setPreference } = useTheme();
   const insets = useSafeAreaInsets();
+  const { region, setRegion } = useSettings();
 
+  const regionOptions: { value: Region; label: string }[] = [
+    { value: 'eu', label: t('profile.regions.eu') },
+    { value: 'uk', label: t('profile.regions.uk') },
+    { value: 'us', label: t('profile.regions.us') },
+  ];
   const appearance: { value: ThemePreference; label: string }[] = [
     { value: 'system', label: t('profile.system') },
     { value: 'light', label: t('profile.light') },
@@ -64,6 +72,13 @@ export default function ProfileScreen() {
             );
           })}
         </View>
+      </View>
+
+      <View style={styles.group}>
+        <Text variant="label" muted style={styles.groupLabel}>
+          {t('profile.region')}
+        </Text>
+        <Segmented label={t('profile.region')} options={regionOptions} value={region} onChange={setRegion} />
       </View>
 
       <Text variant="small" muted style={styles.version}>
